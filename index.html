@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jermaine Charles Simon | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#1F2937',
+                        accent: '#F59E0B'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/cera-pro.css">
+</head>
+<body class="bg-[#161616] text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-[#161616]/90 backdrop-blur-sm border-b border-zinc-800 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl font-bold text-white"></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white transition-colors">About</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-400 hover:text-white">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#161616] border-t border-zinc-800">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-400 hover:text-white transition-colors">About</a>
+                <a href="#projects" class="block px-3 py-2 text-gray-400 hover:text-white transition-colors">Projects</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-400 hover:text-white transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-20 min-h-screen flex items-center justify-center bg-[#161616]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">
+                    Hi, I'm <span class="text-primary">Jermaine Charles Simon</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                    Aspiring Front-End Developer & UI/UX Designer
+                </p>
+                <p class="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+                    Passionate about crafting beautiful, functional, and user-centered digital experiences. I’m eager to apply my front-end development and UI/UX skills in real-world projects, contributing to impactful teams while continuing to grow as a developer.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="bg-[#2563eb] text-white px-8 py-3 rounded-lg hover:bg-[#1d4ed8] transition-colors font-semibold">
+                        My Projects
+                    </a>
+                    <a href="#contact" class="border-2 border-[#2563eb] text-[#2563eb] px-8 py-3 rounded-lg hover:bg-[#2563eb] hover:text-white transition-colors font-semibold">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- About Section -->
+    <section id="about" class="py-20 bg-[#232323]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+                About Me
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Who I Am</h3>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        I'm a passionate and creative with a love for building digital experiences. I enjoy learning new technologies and turning ideas into reality through code and design. I thrive on challenges and am always eager to grow my skills and contribute to exciting projects.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Education</h3>
+                    <div class="space-y-6 mb-2">
+                        <div class="flex items-start gap-4">
+                            <div class="pt-1">
+                                <i class="fas fa-graduation-cap text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-white">Bachelor of Science in Information Technology</div>
+                                <div class="text-zinc-300">University of Caloocan City - South Campus</div>
+                                <div class="text-blue-300 text-xs font-medium">2021 – 2025</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="pt-1">
+                                <i class="fas fa-laptop-code text-blue-400 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-white">Junior & Senior High School - ICT Strand</div>
+                                <div class="text-zinc-300">Macario B. Asistio Sr. HS Unit I</div>
+                                <div class="text-blue-300 text-xs font-medium">2015 – 2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6 text-white">My Skills</h3>
+                    <div class="flex flex-wrap gap-3 mb-8">
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fab fa-html5"></i> HTML5
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fab fa-css3-alt"></i> CSS3
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fab fa-js"></i> JavaScript
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fab fa-react"></i> React Native
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fab fa-python"></i> Python
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fab fa-figma"></i> Figma
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fas fa-paint-brush"></i> Adobe Photoshop
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fas fa-pencil-alt"></i> Adobe Illustrator
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-[#2563eb]/20 text-[#2563eb] px-4 py-2 rounded-full text-sm font-medium border border-[#2563eb]">
+                            <i class="fas fa-palette"></i> Canva
+                        </span>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-6 text-white">Soft Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="inline-flex items-center gap-2 bg-purple-900/30 text-purple-200 px-4 py-2 rounded-full text-sm font-medium border border-purple-700">
+                            <i class="fas fa-users"></i> Teamwork
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-purple-900/30 text-purple-200 px-4 py-2 rounded-full text-sm font-medium border border-purple-700">
+                            <i class="fas fa-comments"></i> Communication
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-purple-900/30 text-purple-200 px-4 py-2 rounded-full text-sm font-medium border border-purple-700">
+                            <i class="fas fa-lightbulb"></i> Problem Solving
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-purple-900/30 text-purple-200 px-4 py-2 rounded-full text-sm font-medium border border-purple-700">
+                            <i class="fas fa-user-clock"></i> Time Management
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-purple-900/30 text-purple-200 px-4 py-2 rounded-full text-sm font-medium border border-purple-700">
+                            <i class="fas fa-brain"></i> Adaptability
+                        </span>
+                        <span class="inline-flex items-center gap-2 bg-purple-900/30 text-purple-200 px-4 py-2 rounded-full text-sm font-medium border border-purple-700">
+                            <i class="fas fa-handshake"></i> Collaboration
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-[#161616]">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10 text-white">
+                Featured Projects
+            </h2>
+            <!-- Tabs -->
+            <div class="flex justify-center mb-10">
+                <button id="tab-code" class="tab-btn px-6 py-2 rounded-l-lg bg-white text-[#161616] font-semibold border border-zinc-700 focus:outline-none">Projects</button>
+                <button id="tab-uiux" class="tab-btn px-6 py-2 rounded-r-lg bg-[#232323] text-white font-semibold border border-zinc-700 focus:outline-none">UI/UX Designs</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div id="projects-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Code Project Start -->
+                <div class="project-card bg-[#232323] rounded-lg border border-zinc-700 overflow-hidden hover:border-zinc-500 transition-colors" data-type="code">
+                    <div class="relative h-48 bg-[#161616] flex items-center justify-center border-b border-zinc-800">
+                        <span class="absolute top-3 left-3 bg-black/80 text-white-400 text-xs font-semibold px-3 py-1 rounded-full border border-blue-500 z-10">Capstone Project</span>
+                        <img src="assets/img/arko1.png" alt="ARKO Preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">ARKO (Advance Remote Kontrol Operator for Enhanced Flood Rescue Operations)</h3>
+                        <p class="text-gray-300 mb-4">
+                            The ARKO is a remote-controlled boat designed to assist rescue teams in high-flood situations by reaching individuals stranded in areas inaccessible by traditional methods. 
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">C#</span>
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">React Native</span>
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">Java</span>
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">Python</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/DazzleBergz/ARKO" target="_blank" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="https://www.youtube.com/watch?v=QxnQw5PtyuM&t=1s" target="_blank" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fab fa-youtube mr-2"></i> Video
+                            </a>
+                            <a href="assets/docs/arko-user-manual.pdf" target="_blank" rel="noopener" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fas fa-book mr-2"></i> User Manual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="project-card bg-[#232323] rounded-lg border border-zinc-700 overflow-hidden hover:border-zinc-500 transition-colors" data-type="code">
+                    <div class="relative h-48 bg-[#161616] flex items-center justify-center border-b border-zinc-800">
+                        <span class="absolute top-3 left-3 bg-black/80 text-white-400 text-xs font-semibold px-3 py-1 rounded-full border border-blue-500 z-10">Capstone Project</span>
+                        <img src="assets/img/arko2.png" alt="ARKO App Preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">ARKO Mobile App</h3>
+                        <p class="text-gray-300 mb-4">
+                            An ARKO (Advance Remote Kontrol Operator) mobile app is a mobile application that tracks the presence of the ARKO, send emergency requests or help to the operators in case of emergency.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">React Native</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Cmonsiiii/ARKO-Mobile-App" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-[#232323] rounded-lg border border-zinc-700 overflow-hidden hover:border-zinc-500 transition-colors" data-type="code">
+                    <div class="h-48 bg-[#161616] flex items-center justify-center border-b border-zinc-800">
+                        <img src="assets/img/SHAFT-preview.png" alt="SHAFT Preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">SHAFT Mobile App</h3>
+                        <p class="text-gray-300 mb-4">
+                            SHAFT (Smart Holder & Alert for Forecast Tracking) is a simple mobile application that has umbrella presence tracking to ensure users take their umbrella when rain is expected and remind them to return it afterward.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">React Native</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/Cmonsiiii/SHAFT" target="_blank" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fab fa-github mr-2"></i>Code
+                            </a>
+                            <a href="assets/docs/shaft-user-manual.pdf" target="_blank" rel="noopener" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fas fa-book mr-2"></i> User Manual
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Code Project END -->
+
+                <!-- UI/UX Project -->
+                <div class="project-card bg-[#232323] rounded-lg border border-zinc-700 overflow-hidden hover:border-zinc-500 transition-colors" data-type="uiux">
+                    <div class="h-48 bg-[#161616] flex items-center justify-center border-b border-zinc-800">
+                        <img src="assets/img/arko-figma-preview.png" alt="ARKO Preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">ARKO Mobile App Design Concept</h3>
+                        <p class="text-gray-300 mb-4">
+                            An ARKO mobile app wireframe designed in Figma. Features the ARKO's interface and functionalities that will be used by the civilians
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">Figma</span>
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">UI/UX</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://www.figma.com/design/HT7Wdqv60YzXdYChXXeGJB/ARKO--CAPTSONE-?node-id=1-5&t=rBmpLmzN2y1zXW0F-1" target="_blank" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fab fa-figma mr-2"></i>View in Figma
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card bg-[#232323] rounded-lg border border-zinc-700 overflow-hidden hover:border-zinc-500 transition-colors" data-type="uiux">
+                    <div class="h-48 bg-[#161616] flex items-center justify-center border-b border-zinc-800">
+                        <img src="assets/img/smart-home-figma-preview.png" alt="ARKO Preview" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">Smart Home Mobile App Design Concept</h3>
+                        <p class="text-gray-300 mb-4">
+                            A Smart Home mobile app wireframe designed in Figma. It features a design and some concepts on how the app will look like.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">Figma</span>
+                            <span class="bg-[#161616] text-zinc-200 px-2 py-1 rounded text-xs border border-zinc-700">UI/UX</span>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://www.figma.com/design/eIGTjO2hzuj0IMA9HolvuZ/Smart-Home-App--ARKO-?node-id=1-5048&t=lJfhzoqFVm941ADr-1" target="_blank" class="text-white hover:text-gray-300 transition-colors">
+                                <i class="fab fa-figma mr-2"></i>View in Figma
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UI/UX Project END -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section id="awards" class="py-20 bg-[#232323]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Awards</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-[#161616] rounded-lg border border-zinc-700 p-6 flex items-center gap-4">
+                    <div class="text-3xl text-yellow-400"><i class="fas fa-trophy"></i></div>
+                    <div>
+                        <div class="font-semibold text-white">Best Technology</div>
+                        <div class="text-gray-300 text-sm">Awarded by AppCon 2024 An Invitation Application Development Contest</div>
+                    </div>
+                </div>
+                <div class="bg-[#161616] rounded-lg border border-zinc-700 p-6 flex items-center gap-4">
+                    <div class="text-3xl text-yellow-400"><i class="fas fa-medal"></i></div>
+                    <div>
+                        <div class="font-semibold text-white">2nd Place Best in Thesis</div>
+                        <div class="text-gray-300 text-sm">26th Annual I.T. Thesis Exhibit University of Caloocan City - South Campus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-[#161616]">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
+                Let's Connect
+            </h2>
+            <div class="text-center">
+                <p class="text-gray-300 mb-12 leading-relaxed max-w-2xl mx-auto">
+                    I'm always interested in new opportunities and exciting projects. 
+                    Whether you have a question or just want to say hi, feel free to reach out!
+                </p>
+                <div class="space-y-6 mb-12">
+ 
+                </div>
+                <div class="flex justify-center space-x-6">
+                    <a href="mailto:jercharles.simon@gmail.com" target="_blank" class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-zinc-900 hover:bg-zinc-200 transition-colors text-xl">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jermaine-charles-simon-a59586363" target="_blank" class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-black hover:bg-gray-200 transition-colors text-xl">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Cmonsiiii" target="_blank" class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-black hover:bg-gray-200 transition-colors text-xl">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/jcharles.monsi" target="_blank" class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-black hover:bg-gray-200 transition-colors text-xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/izuumiiin_/" target="_blank" class="w-16 h-16 bg-white rounded-lg flex items-center justify-center text-black hover:bg-gray-200 transition-colors text-xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#161616] text-white py-8 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025 Jermaine Charles Simon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
